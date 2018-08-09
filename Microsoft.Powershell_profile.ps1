@@ -1,3 +1,6 @@
+# import module
+Import-Module PSReadLine
+
 # Persistent History
 # Save last 200 history items on exit
 $MaximumHistoryCount = 200  
@@ -15,8 +18,8 @@ if ((Test-Path $historyPath)) {
 }
 
 # Aliases and functions to make it useful
-New-Alias -Name i -Value Invoke-History -Description "Invoke history alias"
-Rename-Item Alias:\h original_h -Force
+#Set-Alias -Name i -Value Invoke-History -Description "Invoke history alias"
+#Rename-Item Alias:\h original_h -Force
 function h { Get-History -c  $MaximumHistoryCount }
 function hg($arg) { Get-History -c $MaximumHistoryCount | out-string -stream | select-string $arg }
 
@@ -26,10 +29,10 @@ Set-PSReadlineKeyHandler -Key Tab -Function Complete
 
 # Aliases
 Set-Alias -Name which -Value get-command
-Set-Alias -Name python3 -Value "C:\Users\r341h\AppData\Local\Programs\Python\Python36\python.exe"
-Set-Alias -Name py3 -Value "C:\Users\r341h\AppData\Local\Programs\Python\Python36\python.exe"
-Set-Alias -Name pip3 -Value "C:\Users\r341h\AppData\Local\Programs\Python\Python36\Scripts\pip.exe"
-Set-Alias -Name ipython3 -Value "C:\Users\r341h\AppData\Local\Programs\Python\Python36\Scripts\ipython.exe"
+Set-Alias -Name python3 -Value "C:\Python36\python.exe"
+Set-Alias -Name py3 -Value "C:\Python36\python.exe"
+Set-Alias -Name pip3 -Value "C:\Python36\Scripts\pip.exe"
+Set-Alias -Name ipython3 -Value "C:\Python36\Scripts\ipython.exe"
 Set-Alias -Name python2 -Value "C:\Python27\python.exe"
 Set-Alias -Name py2 -Value "C:\Python27\python.exe"
 Set-Alias -Name pip2 -Value "C:\Python27\Scripts\pip.exe"
