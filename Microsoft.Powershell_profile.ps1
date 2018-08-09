@@ -22,7 +22,7 @@ function hg($arg) { Get-History -c $MaximumHistoryCount | out-string -stream | s
 
 # Set Linux bash like autocomplete
 # https://stackoverflow.com/questions/8264655/how-to-make-powershell-tab-completion-work-like-bash
-Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+Set-PSReadlineKeyHandler -Key Tab -Function Complete
 
 # Aliases
 Set-Alias -Name which -Value get-command
