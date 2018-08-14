@@ -29,12 +29,17 @@ Set-PSReadlineKeyHandler -Key Tab -Function Complete
 
 # Aliases
 Set-Alias -Name which -Value get-command
+
+Set-Alias ll Get-ChildItem
+
 Set-Alias -Name python3 -Value "C:\Python36\python.exe"
-Set-Alias -Name py3 -Value "C:\Python36\python.exe"
 Set-Alias -Name pip3 -Value "C:\Python36\Scripts\pip.exe"
 Set-Alias -Name ipython3 -Value "C:\Python36\Scripts\ipython.exe"
+
 Set-Alias -Name python2 -Value "C:\Python27\python.exe"
-Set-Alias -Name py2 -Value "C:\Python27\python.exe"
 Set-Alias -Name pip2 -Value "C:\Python27\Scripts\pip.exe"
 Set-Alias -Name ipython2 -Value "C:\Python27\Scripts\ipython.exe"
-Set-Alias -Name ipython -Value "C:\Python27\Scripts\ipython.exe"
+
+Set-Alias -Name python -Value "python3"
+Set-Alias -Name ipython -Value "ipython3"
+Set-Alias -Name pip -Value "pip3"
