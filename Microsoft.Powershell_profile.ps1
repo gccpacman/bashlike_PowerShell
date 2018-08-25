@@ -29,7 +29,8 @@ Set-PSReadlineKeyHandler -Key Tab -Function Complete
 
 # Aliases
 Set-Alias -Name which -Value get-command
-
+Set-Alias -Name ifconfig -Value ipconfig
+Set-Alias l Get-ChildItem
 Set-Alias ll Get-ChildItem
 
 Set-Alias -Name python3 -Value "C:\Python36\python.exe"
