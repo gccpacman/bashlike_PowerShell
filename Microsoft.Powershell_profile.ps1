@@ -33,9 +33,9 @@ Set-Alias -Name ifconfig -Value ipconfig
 Set-Alias l Get-ChildItem
 Set-Alias ll Get-ChildItem
 
-Set-Alias -Name python3 -Value "C:\Python36\python.exe"
-Set-Alias -Name pip3 -Value "C:\Python36\Scripts\pip.exe"
-Set-Alias -Name ipython3 -Value "C:\Python36\Scripts\ipython.exe"
+Set-Alias -Name python3 -Value "C:\Python37\python.exe"
+Set-Alias -Name pip3 -Value "C:\Python37\Scripts\pip.exe"
+Set-Alias -Name ipython3 -Value "C:\Python37\Scripts\ipython.exe"
 
 Set-Alias -Name python2 -Value "C:\Python27\python.exe"
 Set-Alias -Name pip2 -Value "C:\Python27\Scripts\pip.exe"
